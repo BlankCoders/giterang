@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="newtab.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    />
     <title>New Tab</title>
   </head>
   <body>
@@ -25,9 +29,11 @@
         />
         <button value="submit" class="submit-btn">Search</button>
       </form>
-      <section>
-        <img src="" alt="user-img" class="user-img" />
-        <div>
+      <section class="user-deet">
+        <div class="sec-1">
+          <img src="" alt="user-img" class="user-img" />
+        </div>
+        <div class="sec-2">
           <div class="line-1">
             <p class="name"></p>
             <p class="joined"></p>
@@ -36,34 +42,38 @@
           <p class="bio"></p>
           <div class="stats">
             <div class="repos">
-              <p class="title">Repos</p>
-              <p class="r-numbers"></p>
+              <p class="title-s">Repos</p>
+              <p class="r-numbers nums-s"></p>
             </div>
             <div class="followers">
-              <p class="title">Followers</p>
-              <p class="fo-numbers"></p>
+              <p class="title-s">Followers</p>
+              <p class="fo-numbers nums-s"></p>
             </div>
             <div class="following">
-              <p class="title">Following</p>
-              <p class="fn-numbers"></p>
+              <p class="title-s">Following</p>
+              <p class="fn-numbers nums-s"></p>
             </div>
           </div>
           <div class="infos">
-            <div class="loc">
-              <p class="title-i"></p>
-              <p class="loc-links"></p>
+            <div class="infoline-1">
+              <div class="loc info-sec">
+                <span class="material-icons-round">place</span>
+                <p class="loc-links"></p>
+              </div>
+              <div class="blog info-sec">
+                <span class="material-icons-round">rss_feed</span>
+                <a href="" target="_blank" class="blg-links"></a>
+              </div>
             </div>
-            <div class="twitter">
-              <p class="title-i"></p>
-              <p class="twi-links"></p>
-            </div>
-            <div class="blog">
-              <p class="title-i"></p>
-              <p class="blg-links"></p>
-            </div>
-            <div class="org">
-              <p class="title-i"></p>
-              <p class="org-links"></p>
+            <div class="infoline-2">
+              <div class="twitter info-sec">
+                <span class="material-icons-round">link</span>
+                <a href="" target="_blank" class="twi-links"></a>
+              </div>
+              <div class="org info-sec">
+                <span class="material-icons-round">corporate_fare</span>
+                <a href="" target="_blank" class="org-links"></a>
+              </div>
             </div>
           </div>
         </div>

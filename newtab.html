@@ -4,10 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="newtab.css" />
     <title>New Tab</title>
   </head>
   <body>
-    <button id="hemlo" type="submit">hemlo</button>
+    <button class="login" type="submit">login</button>
+    <div class="title">giterang</div>
+    <div class="container">
+      <form
+        action="https://www.google.com/search"
+        class="searchform"
+        method="get"
+        name="searchform"
+      >
+        <input
+          class="search-input"
+          name="q"
+          placeholder="search..."
+          type="text"
+        />
+        <button value="submit" class="submit-btn">Search</button>
+      </form>
+      <section>
+        <img src="" alt="user-img" class="user-img" />
+        <div>
+          <div class="line-1">
+            <p class="name"></p>
+            <p class="joined"></p>
+          </div>
+          <p class="username"></p>
+          <p class="bio"></p>
+          <div class="stats">
+            <div class="repos">
+              <p class="title">Repos</p>
+              <p class="r-numbers"></p>
+            </div>
+            <div class="followers">
+              <p class="title">Followers</p>
+              <p class="fo-numbers"></p>
+            </div>
+            <div class="following">
+              <p class="title">Following</p>
+              <p class="fn-numbers"></p>
+            </div>
+          </div>
+          <div class="infos">
+            <div class="loc">
+              <p class="title-i"></p>
+              <p class="loc-links"></p>
+            </div>
+            <div class="twitter">
+              <p class="title-i"></p>
+              <p class="twi-links"></p>
+            </div>
+            <div class="blog">
+              <p class="title-i"></p>
+              <p class="blg-links"></p>
+            </div>
+            <div class="org">
+              <p class="title-i"></p>
+              <p class="org-links"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
-  <script src="newtab.js"></script>
+  <script type="module" src="newtab.js"></script>
+  <script src="axios.min.js"></script>
 </html>

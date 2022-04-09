@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #141c2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  font-size: 100% !important;
+}
+
+button.login {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.5rem 0.625rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #141c2f;
+  border: 1px solid #bbe1fa;
+  background-color: #bbe1fa;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+button.login:hover {
+  color: #bbe1fa;
+  background-color: transparent;
+}
+
+div.container {
+  width: 700px;
+  height: 100%;
+  margin: 5rem auto;
+  color: #fff;
+}
+
+div.title {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #fff;
+}
+
+form {
+  position: relative;
+}
+
+input.search-input::placeholder {
+  color: #6b778d;
+}
+
+input.search-input,
+input.search-input:focus-within,
+input.search-input:focus-visible,
+input.search-input:focus {
+  width: 100%;
+  background-color: #1f2a48;
+  border: none;
+  padding: 1rem 6rem 1rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 10px;
+}
+
+button.submit-btn {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.6rem;
+  padding: 0.5rem 0.625rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2c8dec;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}

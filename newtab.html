@@ -1,85 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="newtab.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-    />
-    <title>New Tab</title>
-  </head>
-  <body>
-    <button class="login" type="submit">login</button>
-    <div class="title">giterang</div>
-    <div class="container">
-      <form
-        action="https://www.google.com/search"
-        class="searchform"
-        method="get"
-        name="searchform"
-      >
-        <input
-          class="search-input"
-          name="q"
-          placeholder="search..."
-          type="text"
-        />
-        <button value="submit" class="submit-btn">Search</button>
-      </form>
-      <section class="user-deet">
-        <div class="sec-1">
-          <img src="" alt="user-img" class="user-img" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="newtab.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
+  <title>New Tab</title>
+</head>
+
+<body>
+  <button class="login" type="submit">login</button>
+  <div class="title">giterang</div>
+  <div class="modal hide">
+    <form class="popup">
+      <span class="material-icons-round close">close</span>
+      <label for="username-ip">Enter your username:</label>
+      <br />
+      <input type="text" id="username-ip" placeholder="username" />
+      <span class="not-found hide">Profile Not Found!</span>
+    </form>
+  </div>
+  <div class="container">
+    <form action="https://www.google.com/search" class="searchform" method="get" name="searchform">
+      <input class="search-input" name="q" placeholder="search..." type="text" />
+      <button value="submit" class="submit-btn">Search</button>
+    </form>
+    <section class="user-deet">
+      <div class="sec-1">
+        <img src="" alt="user-img" class="user-img" />
+      </div>
+      <div class="sec-2">
+        <div class="line-1">
+          <p class="name"></p>
+          <p class="joined"></p>
         </div>
-        <div class="sec-2">
-          <div class="line-1">
-            <p class="name"></p>
-            <p class="joined"></p>
+        <a href="" target="_blank" class="username"></a>
+        <p class="bio"></p>
+        <div class="stats">
+          <div class="repos">
+            <p class="title-s">Repos</p>
+            <p class="r-numbers nums-s"></p>
           </div>
-          <p class="username"></p>
-          <p class="bio"></p>
-          <div class="stats">
-            <div class="repos">
-              <p class="title-s">Repos</p>
-              <p class="r-numbers nums-s"></p>
+          <div class="followers">
+            <p class="title-s">Followers</p>
+            <p class="fo-numbers nums-s"></p>
+          </div>
+          <div class="following">
+            <p class="title-s">Following</p>
+            <p class="fn-numbers nums-s"></p>
+          </div>
+        </div>
+        <div class="infos">
+          <div class="infoline-1">
+            <div class="loc info-sec">
+              <span class="material-icons-round">place</span>
+              <p class="loc-links"></p>
             </div>
-            <div class="followers">
-              <p class="title-s">Followers</p>
-              <p class="fo-numbers nums-s"></p>
-            </div>
-            <div class="following">
-              <p class="title-s">Following</p>
-              <p class="fn-numbers nums-s"></p>
+            <div class="blog info-sec">
+              <span class="material-icons-round">rss_feed</span>
+              <a href="" target="_blank" class="blg-links"></a>
             </div>
           </div>
-          <div class="infos">
-            <div class="infoline-1">
-              <div class="loc info-sec">
-                <span class="material-icons-round">place</span>
-                <p class="loc-links"></p>
-              </div>
-              <div class="blog info-sec">
-                <span class="material-icons-round">rss_feed</span>
-                <a href="" target="_blank" class="blg-links"></a>
-              </div>
+          <div class="infoline-2">
+            <div class="twitter info-sec">
+              <span class="material-icons-round">link</span>
+              <a href="" target="_blank" class="twi-links"></a>
             </div>
-            <div class="infoline-2">
-              <div class="twitter info-sec">
-                <span class="material-icons-round">link</span>
-                <a href="" target="_blank" class="twi-links"></a>
-              </div>
-              <div class="org info-sec">
-                <span class="material-icons-round">corporate_fare</span>
-                <a href="" target="_blank" class="org-links"></a>
-              </div>
+            <div class="org info-sec">
+              <span class="material-icons-round">corporate_fare</span>
+              <a href="" target="_blank" class="org-links"></a>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-  </body>
-  <script type="module" src="newtab.js"></script>
-  <script src="axios.min.js"></script>
+      </div>
+    </section>
+  </div>
+</body>
+<script type="module" src="newtab.js"></script>
+<script src="axios.min.js"></script>
+
 </html>

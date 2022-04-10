@@ -7,6 +7,7 @@
   outline: none;
   font-family: 'Inter', sans-serif;
   text-decoration: none;
+  z-index: 1;
 }
 
 body {
@@ -24,6 +25,64 @@ body {
 
 a {
   color: inherit;
+}
+
+.material-icons-round {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  line-height: 1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.popup {
+  position: relative;
+  width: 500px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.close {
+  color: #000;
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+#username-ip {
+  width: 90%;
+  height: 3rem;
+  padding: 8px;
+  font-size: 1.125rem;
+  text-align: center;
 }
 
 button.login {
@@ -201,8 +260,9 @@ section.user-deet {
   color: #bbe1fa;
 }
 
-.material-icons-round {
-  margin-right: 10px;
-  font-size: 1rem;
-  color: #fff;
+.not-found {
+  color: red;
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+  text-transform: lowercase;
 }

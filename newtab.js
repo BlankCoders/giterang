@@ -1,10 +1,10 @@
-let client_id = "609d9c3a61a26777a0c3";
-let scopes = "read:user notifications"
-let redirect_uri = "http://localhost:3000/login"
+// let client_id = '609d9c3a61a26777a0c3';
+// let scopes = 'read:user notifications';
+// let redirect_uri = 'http://localhost:3000/login';
 
-document.querySelector('.login').addEventListener('click', () => {
-  window.location.href = `https://github.com/login/oauth/authorize?client_id=${client_id}&scope=${scopes}&redirect_uri=${redirect_uri}`;
-});
+// document.querySelector('.login').addEventListener('click', () => {
+//   window.location.href = `https://github.com/login/oauth/authorize?client_id=${client_id}&scope=${scopes}&redirect_uri=${redirect_uri}`;
+// });
 
 const url = 'https://api.github.com/users/lostgirljourney';
 const res = await axios.get(url);
@@ -56,3 +56,16 @@ document.querySelector('.org-links').href =
   res.data.company === undefined
     ? 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     : `https://github.com/${res.data.company.substr(1)}`;
+
+// modal
+document.querySelector('.popup').addEventListener('submit', (e) => {
+  e.preventDefault();
+});
+
+document.querySelector('.login').addEventListener('click', () => {
+  document.querySelector('.modal').classList.toggle('hide');
+});
+
+document.querySelector('.close').addEventListener('click', () => {
+  document.querySelector('.modal').classList.toggle('hide');
+});

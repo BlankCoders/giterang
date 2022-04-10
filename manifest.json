@@ -16,6 +16,7 @@
   "permissions": [
     "tabs",
     "background",
+    "cookies",
     "activeTab",
     "tabs",
     "storage",

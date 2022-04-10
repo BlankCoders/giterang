@@ -52,7 +52,7 @@ div.container {
   margin-bottom: 7.5rem;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
 }
 
@@ -99,6 +99,7 @@ button.submit-btn {
 }
 
 section.user-deet {
+  /* visibility: hidden; */
   display: flex;
   justify-content: space-between;
   background-color: #1f2a48;

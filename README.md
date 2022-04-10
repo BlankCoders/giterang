@@ -58,4 +58,9 @@ Learnt a new stack and adapted it fully quickly. 😶‍🌫️
 
 We are going to grow it more and will add more features. 🤓
 
+## Made by Blank Coders 💻
+
+- [Aniruddha Das](https://twitter.com/isthatAniruddha)
+- [Falguni Sarkar](https://twitter.com/isshefalguni)
+
 **Enjoy!**

@@ -14,7 +14,6 @@
     "default_title": "Opens a new tab."
   },
   "permissions": [
-    "tabs",
     "background",
     "cookies",
     "activeTab",
